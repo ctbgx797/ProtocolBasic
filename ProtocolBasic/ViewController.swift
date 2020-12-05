@@ -19,7 +19,7 @@ class ViewController: UIViewController,CatchProtocolDelegate {
     }
     
     func catchData(count: Int) {
-        
+        label.text = String(count)
     }
 
     @IBAction func next(_ sender: Any) {
