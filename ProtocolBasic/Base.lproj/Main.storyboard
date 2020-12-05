@@ -30,13 +30,17 @@
                                 <state key="normal" title="次へ">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQg-Hw-j3O"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.003133612684905529" green="0.99658757448196411" blue="0.61711770296096802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <segue destination="CfN-8F-M33" kind="presentation" modalPresentationStyle="fullScreen" id="JPD-vT-2Vc"/>
+                        <outlet property="label" destination="o2R-iB-P8T" id="0bY-zI-3aa"/>
+                        <segue destination="CfN-8F-M33" kind="presentation" identifier="next" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="JPD-vT-2Vc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

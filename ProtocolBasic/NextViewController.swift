@@ -34,5 +34,9 @@ class NextViewController: UIViewController {
     
     @IBAction func back(_ sender: Any) {
         
+        //デリゲートメソッドを任せたクラスで発動させる
+        delegate?.catchData(count: count)
+        dismiss(animated: true, completion: nil)
+        
     }
 }
